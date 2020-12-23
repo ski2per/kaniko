@@ -75,6 +75,7 @@ COPY --from=1 /usr/local/bin/docker-credential-acr-linux /kaniko/docker-credenti
 COPY --from=1 /usr/local/bin/docker-credential-acr-env /kaniko/docker-credential-acr-env
 COPY --from=busybox-arch /bin /busybox
 
+
 # Declare /busybox as a volume to get it automatically in the path to ignore
 VOLUME /busybox
 
